@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input A"
+        android:layout_marginTop="200sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input B"
+        android:layout_below="@id/inputA"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/swapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SWAP"
+        android:layout_marginLeft="100sp"
+        android:layout_below="@+id/inputB"/>
+
+    <Button
+        android:id="@+id/compareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:layout_marginLeft="40sp"
+        android:layout_toRightOf="@+id/swapBtn"
+        android:layout_below="@+id/inputB"/>
+
+
+</RelativeLayout>
